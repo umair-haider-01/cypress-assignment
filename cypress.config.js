@@ -1,9 +1,12 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
+  env:{
+    // Defining BaseURL for API
+    "api-baseURL":"https://jsonplaceholder.typicode.com"
   },
+  e2e: {
+    // Defining BaseURL for UI
+    baseUrl: "http://www.amazon.com"
+  }
 });
