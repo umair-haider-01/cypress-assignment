@@ -8,8 +8,7 @@ describe("Add To Cart", () => {
     cy.visit("/");
   });
 
-  it("Should Search, Add Item To Cart & Verify Cart Details", () => {
-    // Search for “gaming keyboards”
+  it("Should Search Item, Add Item To Cart & Verify Cart Details", () => {
     cartPage.searchAndAddItemToCart("gaming keyboards");
     cartPage.verifyCartDetails();
     cartPage.selectGiftOption();

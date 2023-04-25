@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "npx cypress open",
-    "cy:run": "npx cypress run"
+    "cy:run": "npx cypress run",
+    "cy:UI": "npx cypress run --spec 'cypress/e2e/addToCart/addToCart.cy.js' ",
+    "cy:API": "npx cypress run --spec 'cypress/e2e/userAPI/userAPI.cy.js' "
   },
   "keywords": [],
   "author": "",
